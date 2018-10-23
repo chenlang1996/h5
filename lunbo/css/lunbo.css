@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+#box{
+	position: relative;
+	width: 720px;
+	height: 344px;
+	border: 1px solid black;
+	margin: 50px auto;
+	overflow: hidden;
+}
+#imgbox {
+	position: absolute;
+	width: 1440px;
+	height: 344px;
+	background: red;
+	top: 0;
+	left: 0;
+}
+#imgbox img{
+	position: absolute;
+	left: 720px;
+	top: 0;
+}
+#imgbox .first{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.btnleft{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 0;
+	top: 130px;
+	z-index: 9;
+}
+.btnright{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 0;
+	top: 130px;
+	z-index: 9;
+}
+#list{
+	position: absolute;	
+	right: 50px;
+	bottom: 20px;
+	z-index: 2;
+}
+#list li{
+	width: 20px;
+	height: 20px;
+	border: 1px white solid;
+	/*设置浮动靠左,左对齐（其次可以上）*/
+	float: left;
+	list-style: none;
+	margin: 0 5px;
+}
+.fill{
+	background: white;
+}

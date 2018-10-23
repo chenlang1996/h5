@@ -1,0 +1,133 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+body{
+	background: url(../img/2.jpg);
+	background-size: 100% 100%;
+}
+
+/*找到子类*/
+div:nth-child(1){
+	background: url(../img/fsw.png);
+	width: 768px;
+	height: 768px;
+	position: absolute;
+	left: 50%;
+	margin-left: -384px;
+	/*名字 运动时间 次数 匀速运动*/
+	animation: zhuan 10s infinite linear;
+}
+div:nth-child(2){
+	position: absolute;
+	background: url(../img/bracketsmall.png);
+	width: 247px;
+	height: 480px;
+	left: 50%;
+	top: 384px;
+	margin-left: -123px;
+	z-index: -1;
+}
+div:nth-child(3){
+	position: absolute;
+	background: url(../img/bracket.png);
+	width: 358px;
+	height: 529px;
+	left: 50%;
+	top: 371px;
+	margin-left: -183px;
+	z-index: -1;
+}
+div:nth-child(4){
+	background: url(../img/big-title.png);
+	width: 577px;
+	height: 257px;
+	position: absolute;
+	left: 50%;
+	top: 262px;
+	margin-left: -288px;
+}
+div:nth-child(5){
+	background: url(../img/title.png);
+	width: 413px;
+	height: 139px;
+	position: absolute;
+	left: 50%;
+	margin-left: -190px;
+	top: 455px;
+	
+}
+div:nth-child(6){
+	background: url(../img/arrow.png);
+	position: absolute;
+	width: 48px;
+	height: 64px;
+	left: 50%;
+	top: 542px;
+	margin-left: -24px;
+}
+li{
+	width: 130px;
+	height: 170px;
+	position: absolute;
+	/*去掉小黑点*/
+	list-style: none;
+	transform-origin: 50% 40%;
+	animation: per 10s infinite linear;
+}
+li:nth-child(1)
+{
+	background: url(../img/girl.png);
+	left: 55px;
+	top: 100px;
+}
+li:nth-child(2)
+{
+	background: url(../img/boy.png);
+	left: 319px;
+	top: 0px;
+}
+li:nth-child(3){
+	background: url(../img/dog.png);
+	left: 580px;
+	top: 85px;
+}
+li:nth-child(4){
+	background: url(../img/girls.png);
+	left: 665px;
+	top: 350px;
+}
+li:nth-child(5){
+	background: url(../img/hairboy.png);
+	left: 0;
+	top: 350px;
+}
+li:nth-child(6){
+	background: url(../img/mimi.png);
+	left: 90px;
+	top: 590px;
+}
+li:nth-child(7){
+	background: url(../img/mudog.png);
+	left: 327px;
+	top: 685px;
+}
+li:nth-child(8){
+	background: url(../img/shamegirl.png);
+	left: 590px;
+	top: 540px;
+}
+@keyframes zhuan{
+	from{}
+	to{transform: rotate(360deg);}
+}
+@keyframes per{
+	from{}
+	to{transform: rotate(-360deg);}
+}
